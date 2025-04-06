@@ -7,8 +7,8 @@ on:
   push:
 #    branches-ignore:
 #      - master
-    paths-ignore:
-      - "routes/web.php"
+    paths:
+      - "routes/*.php"
 jobs:
   print_hello_world:
     runs-on: ubuntu-latest
