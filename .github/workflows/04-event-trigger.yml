@@ -1,0 +1,11 @@
+name: 04 Event Trigger
+on:
+
+jobs:
+  print_hello_world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World
+        run: echo "Hello, World!"
+      - name: Step 2
+        run: echo "Hello, World! 22 "
