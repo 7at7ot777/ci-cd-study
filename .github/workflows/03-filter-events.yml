@@ -5,8 +5,10 @@ on:
     types:
       - closed
   push:
-    branches-ignore:
-      - master
+#    branches-ignore:
+#      - master
+    paths:
+      - "routes/web.php"
 jobs:
   print_hello_world:
     runs-on: ubuntu-latest
