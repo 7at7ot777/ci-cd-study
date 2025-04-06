@@ -7,7 +7,7 @@ on:
   push:
 #    branches-ignore:
 #      - master
-    paths:
+    paths-ignore:
       - "routes/web.php"
 jobs:
   print_hello_world:
