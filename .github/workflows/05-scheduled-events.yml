@@ -1,7 +1,7 @@
-name: 04 Event Trigger
+name: 05 Scheduled Events
 on:
-  repository_dispatch:
-    types: [test_result]
+  schedule:
+    - cron: "*/5 * * * *"
 
 jobs:
   print_hello_world:
