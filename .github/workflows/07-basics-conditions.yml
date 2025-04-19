@@ -13,3 +13,7 @@ jobs:
     steps:
       - name: Print hello world if the condition is met
         run : echo "Hello World!"
+
+      - name: Conditional Message
+        if: github.event.pull_request.changed_files < 2
+        run: echo "Conditional Message"
