@@ -1,4 +1,4 @@
-name: 06 Basics Context
+name: 07 Basics Conditions
 run-name: ${{ github.actor }} Explaining context data - Try Number ${{ github.run_number }}
 
 on:
@@ -10,5 +10,5 @@ jobs:
   print-context-data:
     runs-on: ubuntu-latest
     steps:
-      - name: Print hello world
+      - name: Print hello world if the condition is met
         run : echo "Hello, World!"
