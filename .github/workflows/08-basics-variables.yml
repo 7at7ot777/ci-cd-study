@@ -12,5 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print variables
-        run: echo $MY_NAME
-
+#        run: echo $MY_NAME # %MY_NAME% Access in windows
+        run: echo ${{env.MY_NAME}}
