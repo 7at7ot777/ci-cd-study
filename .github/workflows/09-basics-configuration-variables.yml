@@ -1,0 +1,17 @@
+name: 09 Basics Configuration Variables
+run-name: ${{ github.actor }} Explaining variables - Try Number ${{ github.run_number }}
+
+env:
+  MY_NAME: "Mohamed Hathout"
+
+on:
+  push
+
+jobs:
+  print-variables:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print variables
+#        run: echo $MY_NAME # %MY_NAME% Access in windows
+        run: echo ${{vars.MY_CONFIG_VALUE}}
+}}
