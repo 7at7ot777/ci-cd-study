@@ -9,6 +9,7 @@ on:
 jobs:
   print-context-data:
     runs-on: ubuntu-latest
+    if: ${{github.event.pull_request.merged == true}}
     steps:
       - name: Print hello world if the condition is met
-        run : echo ${{toJson(github)}}
+        run : echo "Hello World!"
