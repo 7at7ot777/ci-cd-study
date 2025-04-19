@@ -14,4 +14,3 @@ jobs:
       - name: Print variables
 #        run: echo $MY_NAME # %MY_NAME% Access in windows
         run: echo ${{vars.MY_CONFIG_VALUE}}
-}}
