@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print hello world if the condition is met
-        run : echo "Hello, World!"
+        run : echo ${{toJson(github)}}
