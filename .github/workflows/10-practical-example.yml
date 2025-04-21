@@ -5,7 +5,7 @@ env:
   MY_NAME: "Mohamed Hathout"
 
 on:
-  workflow_dispatch:
+  workflow_dispatch
 
 
 jobs:
