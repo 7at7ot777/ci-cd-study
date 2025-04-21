@@ -17,3 +17,5 @@ jobs:
         run: echo ${{vars.MY_CONFIG_VALUE}}
       - name: Print Secret
         run: echo ${{ secrets.MY_CREDENTIAL_PASSWORD }}
+      - name: Print Default Variables
+        run: env
