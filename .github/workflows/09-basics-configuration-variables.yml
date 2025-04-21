@@ -5,7 +5,8 @@ env:
   MY_NAME: "Mohamed Hathout"
 
 on:
-  push
+  - push
+  - workflow_dispatch
 
 jobs:
   print-variables:
@@ -14,3 +15,5 @@ jobs:
       - name: Print variables
 #        run: echo $MY_NAME # %MY_NAME% Access in windows
         run: echo ${{vars.MY_CONFIG_VALUE}}
+      - name: Print Secret
+        run: echo ${{ secrets.MY_CREDENTIAL_PASSWORD }}
