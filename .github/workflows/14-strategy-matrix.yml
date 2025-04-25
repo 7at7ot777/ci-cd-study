@@ -1,0 +1,16 @@
+name: 14 Strategy Matrix
+run-name: ${{ github.actor }} Explaining Strategy Matrix - Try Number ${{ github.run_number }}
+
+on:
+  push
+
+jobs:
+  Build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - name: Build Project
+        run: echo "Build Project on os (${{ matrix.os }})"
+
