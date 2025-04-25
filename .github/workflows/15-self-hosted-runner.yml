@@ -1,0 +1,12 @@
+name: 15 Self Hosted Runner
+on:
+  workflow_dispatch
+
+jobs:
+  print_hello_world:
+    runs-on: HathoutPC
+    steps:
+      - name: Print Hello World
+        run: echo "Hello, World!"
+      - name: Step 2
+        run: echo "Hello, World! 22 "
