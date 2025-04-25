@@ -14,7 +14,9 @@ jobs:
         php_version: [7.4, 8.0, 8.1]
         exclude:
             - os: windows-latest
-            - php_version: 7.4
+              php_version: 7.4
+            - os: ubuntu-latest
+              php_version: 8.0
 
     steps:
       - name: Build Project
