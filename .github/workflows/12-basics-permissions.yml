@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Simulate testing failure
-        run: toJson(secrets)
+        run: echo ${{toJson(secrets)}}
 
       - name: Open New issue
         if: failure()
