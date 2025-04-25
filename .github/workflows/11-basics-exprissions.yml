@@ -1,4 +1,4 @@
-name: 10 Practical Example
+name: 11 Basics Expressions
 run-name: ${{ github.actor }} Explaining variables - Try Number ${{ github.run_number }}
 
 env:
