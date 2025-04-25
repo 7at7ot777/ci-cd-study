@@ -3,8 +3,8 @@ run-name: ${{ github.actor }} Explaining variables - Try Number ${{ github.run_n
 
 env:
   MY_NAME: "Mohamed Hathout"
-permissions:
-  issues: write
+#permissions:
+#  issues: write
 on:
   push
 
