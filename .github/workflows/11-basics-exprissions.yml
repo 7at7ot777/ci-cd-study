@@ -1,0 +1,16 @@
+name: 10 Practical Example
+run-name: ${{ github.actor }} Explaining variables - Try Number ${{ github.run_number }}
+
+env:
+  RUN_NUMBER: ${{ github.run_number == 1 }}
+
+on:
+  workflow_dispatch
+
+
+jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print run number
+        run: echo ${{env.RUN_NUMBER}}
