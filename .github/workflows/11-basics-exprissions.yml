@@ -17,5 +17,5 @@ jobs:
 #        run: echo ${{env.TESTING_VALUE}}
         run: exit 1
       - name: Print run number 2
-        if: ${{failure()}}
+        if: ${{success()}}
         run: echo ${{env.TESTING_VALUE}}
