@@ -6,7 +6,7 @@ env:
   TESTING_VALUE: ${{contains('Hello World','wor' )}}
 
 on:
-  workflow_dispatch
+  push
 
 
 jobs:
@@ -14,4 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print run number
+#        run: echo ${{env.TESTING_VALUE}}
+        run: exit 1
+      - name: Print run number 2
+        if: ${{failure()}}
         run: echo ${{env.TESTING_VALUE}}
