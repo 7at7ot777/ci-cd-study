@@ -1,6 +1,6 @@
 name: 15 Self Hosted Runner
 on:
-  workflow_dispatch
+  push
 
 jobs:
   print_hello_world:
