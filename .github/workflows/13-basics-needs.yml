@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build Project
-        run: exit 1
+        run: echo "Build Project Dependency"
 
   Test:
     runs-on: ubuntu-latest
