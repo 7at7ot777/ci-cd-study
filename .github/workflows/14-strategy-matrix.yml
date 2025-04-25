@@ -8,9 +8,11 @@ jobs:
   Build:
     runs-on: ${{ matrix.os }}
     strategy:
+      max-parallel: 2
       matrix:
         os: [ubuntu-latest, windows-latest]
+        php_version: [7.4, 8.0, 8.1]
     steps:
       - name: Build Project
-        run: echo "Build Project on os (${{ matrix.os }})"
+        run: echo "Build Project on os (${{ matrix.os }}) with PHP version (${{ matrix.php_version }})"
 
