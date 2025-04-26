@@ -1,6 +1,6 @@
 name: 18 Basics Services
 on:
-  push
+  workflow_dispatch
 
 jobs:
   redis-job:
