@@ -1,0 +1,9 @@
+name: Print hello world
+description: A simple hello world action
+author: Hathout
+
+runs:
+  using: "composite"
+  steps:
+    - run: echo "Hello, world!"
+      shell: bash
