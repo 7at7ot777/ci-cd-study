@@ -1,4 +1,4 @@
-name: 17 Basics Container
+name: 18 Basics Services
 on:
   workflow_dispatch
 
