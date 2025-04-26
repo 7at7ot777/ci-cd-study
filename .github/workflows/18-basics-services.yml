@@ -9,6 +9,9 @@ jobs:
       redis:
         image: redis:latest
     steps:
+     - name: Install redis CLI
+       run: sudo apt-get install -y redis-tools
+
      - name: Check Redis Connection
        run: redis-cli ping
 
