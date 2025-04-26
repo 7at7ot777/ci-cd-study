@@ -3,10 +3,11 @@ on:
   workflow_dispatch
 
 jobs:
-  print_hello_world:
+  redis-job:
     runs-on: ubuntu-latest
-    container:
-      image: php:7.2
+    services:
+      redis:
+        image: redis:latest
     steps:
      - name: Check Redis Connection
        run: redis-cli ping
