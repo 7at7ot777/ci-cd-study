@@ -1,6 +1,6 @@
 name: 18 Basics Services
 on:
-  workflow_dispatch
+  push
 
 jobs:
   redis-job:
@@ -13,5 +13,6 @@ jobs:
        run: sudo apt-get install -y redis-tools
 
      - name: Check Redis Connection
-       run: redis-cli ping
+       run: redis-cli -h redis ping
+
 
