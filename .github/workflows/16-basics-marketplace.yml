@@ -9,7 +9,7 @@ jobs:
       - name: Setup Php Version 7.2
         uses: nanasess/setup-php@v4
         with:
-         php-version: '8.2'
+         php-version: '7.2'
       - name: Print Hello World
         run: php -v
 
