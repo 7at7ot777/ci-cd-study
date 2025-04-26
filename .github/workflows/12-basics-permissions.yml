@@ -6,7 +6,7 @@ env:
 #permissions:
 #  issues: write
 on:
-  push
+  workflow_dispatch
 
 
 jobs:

@@ -6,7 +6,7 @@ env:
   TESTING_VALUE: ${{contains('Hello World','wor' )}}
 
 on:
-  push
+  workflow_dispatch
 
 
 jobs:

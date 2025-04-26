@@ -2,7 +2,7 @@ name: 14 Strategy Matrix
 run-name: ${{ github.actor }} Explaining Strategy Matrix - Try Number ${{ github.run_number }}
 
 on:
-  push
+  workflow_dispatch
 
 jobs:
   Build:

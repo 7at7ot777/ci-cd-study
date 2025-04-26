@@ -2,7 +2,7 @@ name: 13 Basics Needs
 run-name: ${{ github.actor }} Explaining Needs - Try Number ${{ github.run_number }}
 
 on:
-  push
+  workflow_dispatch
 
 jobs:
   Build:

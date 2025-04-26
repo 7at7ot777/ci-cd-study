@@ -1,0 +1,13 @@
+name: 17 Basics Container
+on:
+  workflow_dispatch
+
+jobs:
+  print_hello_world:
+    runs-on: ubuntu-latest
+    container:
+      image: php:7.2
+    steps:
+     - name: Check Redis Connection
+       run: redis-cli ping
+
