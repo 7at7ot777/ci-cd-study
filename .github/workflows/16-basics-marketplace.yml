@@ -1,0 +1,11 @@
+name: 16 Basics Marketplace
+on:
+  push
+
+jobs:
+  print_hello_world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World
+        run: php -v
+
