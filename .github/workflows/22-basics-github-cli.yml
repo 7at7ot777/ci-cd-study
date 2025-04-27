@@ -5,13 +5,14 @@ on:
 jobs:
   open-new-issue-job:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     steps:
       - name: Open New Issue
         run:  gh issue create --title "New Issue on github" --body "Nothing works"
       - name: Checkout
         uses: actions/checkout@v2
-        env:
-          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
 
 
 
