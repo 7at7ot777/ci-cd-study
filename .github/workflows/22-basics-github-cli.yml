@@ -1,0 +1,16 @@
+name: GitHub CLI - Open New Issue
+on:
+  push
+
+jobs:
+  open-new-issue-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open New Issue
+        run:  gh issue create --title "New Issue on github" --body "Nothing works"
+        env:
+          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+
+
+
