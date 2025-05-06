@@ -22,6 +22,7 @@ jobs:
         run: sudo apt install gh -y
 
       - name: Open New Issue
+        if: github.event.pull_request.merged == false
         run: gh pr comment ${{env.PR_NUMBER}} --body "Your PR is closed"
 
 
