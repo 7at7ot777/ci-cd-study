@@ -16,3 +16,14 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withExceptions(function (Exceptions $exceptions) {
         //
     })->create();
+
+
+
+
+// This file is part of the Laravel framework.
+//
+
+
+
+
+
