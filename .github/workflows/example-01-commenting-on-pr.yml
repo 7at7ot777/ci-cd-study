@@ -22,7 +22,7 @@ jobs:
         run: sudo apt install gh -y
 
       - name: Open New Issue
-        run: gh pr comment ${{PR_NUMBER}} --body "Your PR is closed" ${{PR_NUMBER}}
+        run: gh pr comment ${{PR_NUMBER}} --body "Your PR is closed"
 
 
 
