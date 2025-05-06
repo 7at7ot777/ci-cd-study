@@ -21,5 +21,6 @@ return Application::configure(basePath: dirname(__DIR__))
 
 
 // This file is part of the Laravel framework.
+//
 
 
